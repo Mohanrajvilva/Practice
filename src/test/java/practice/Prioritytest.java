@@ -21,5 +21,10 @@ public class Prioritytest {
 	{
 		System.out.println("Execute method3");
 	}
+	@Test
+	public void method()
+	{
+		System.out.println("First commit");
+	}
 
 }
