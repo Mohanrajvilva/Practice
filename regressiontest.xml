@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="regressiontesst">
+<groups>
+<run>
+<include name="regressiontest"/>
+</run>
+</groups>
+
+  <test thread-count="5" name="Testrunner">
+    <classes>
+      <class name="Com.crm.ContactTest.Contacttest"/>
+      <class name="comcast_Organizationtest.Organizationtest"/>
+    </classes>
+  </test> <!-- Testrunner -->
+</suite> <!-- regressiontesst -->
