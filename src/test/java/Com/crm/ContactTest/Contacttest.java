@@ -53,7 +53,7 @@ public class Contacttest extends Baseclass{
 	//===========================================================================//
 	
 	@Test(groups="regressiontest")
-	public void createcontactwithIndustry() throws Throwable
+	public void createcontactwithIndustrytest() throws Throwable
 	{
 		 int ran = jlib.getRandomNumber();
 		

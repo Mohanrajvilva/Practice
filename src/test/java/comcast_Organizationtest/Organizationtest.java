@@ -35,7 +35,7 @@ public class Organizationtest extends Baseclass {
 		Homepage hp=new Homepage(driver);
 		hp.getOrglink().click();
 		
-		Assert.assertEquals("A", "B");
+		
 		/**
 		 * Organisationpage
 		 */
@@ -55,9 +55,9 @@ public class Organizationtest extends Baseclass {
 		
 		String header = coif.getHeader().getText();
 		
-		//SoftAssert soft=new SoftAssert();
-		//soft.assertTrue(header.contains(Orgname));
-		//soft.assertAll();
+		SoftAssert soft=new SoftAssert();
+		soft.assertTrue(header.contains(Orgname));
+		soft.assertAll();
 		
 		
 	}
@@ -65,7 +65,7 @@ public class Organizationtest extends Baseclass {
 	//==============================================================================//
 	
 	@Test(groups="regressiontest")
-	public void createOrgwithindustry() throws Throwable
+	public void createOrgwithindustrytest() throws Throwable
 	{
 		/**
 		 * get Random number
@@ -89,7 +89,7 @@ public class Organizationtest extends Baseclass {
 		
 		Homepage hp=new Homepage(driver);
 		hp.getOrglink().click();
-		Assert.assertEquals("A", "B");
+		
 		/**
 		 * Navigating to Organisation page
 		 */
@@ -113,7 +113,7 @@ public class Organizationtest extends Baseclass {
 		wlib.waitForElementToBeClickable(driver, coif.getHeader());
 		String Cont = coif.getHeader().getText();
 		
-		Assert.assertTrue(Cont.equals(Orgname));
+		Assert.assertTrue(Cont.contains(Orgname));
 		
 }
 }
